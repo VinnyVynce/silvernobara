@@ -8,12 +8,9 @@ services:
     build:
       dockerfile: Dockerfile
       args:
-        REPO: /tmp/repo
-        CACHE: /tmp/cache
+        REPO: /repo
     volumes:
       - /mnt/user/appdata/letsencrypt/www/ostree:/repo
     network_mode: "host"
     environment:
-      - REPO=/tmp/repo
-      - CACHE=/tmp/cache
-
+      - REPO=/repo

@@ -21,10 +21,12 @@ WORKDIR /ostree
 
 # Arguments for rpm-ostree 
 ARG repo=/repo
-ARG cache=/tmp
 
 # Clone repository and change execution permissions for build.sh
 RUN git clone https://github.com/VinnyVynce/silvernobara . && mkdir -p /tmp/cache /tmp/repo && chmod u+x build.sh /entry.sh
 
+# Create crontab
+RUN echo "*/5 * * * * root /ostree/build.sh >> /var/log/cron.log 2>&1" >> /etc/crontab
+
 # Run the command on container startup
-CMD ["/entry.sh"]
+ENTRYPOINT ["/usr/sbin/crond", "-n"]
