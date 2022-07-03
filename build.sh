@@ -1,7 +1,5 @@
 #!/bin/sh
-set -eu
-CACHE=/var/cache/ostree
-REPO=/var/tmp/repo
+cd /ostree
 
 mkdir -p $CACHE
 
@@ -11,5 +9,5 @@ fi
 
 rpm-ostree compose tree --unified-core --cachedir=$CACHE --repo=$REPO fedora-silvernobara.yaml
 ostree summary --repo=$REPO --update
-sleep 5
-tar -czf /var/tmp/repo.tar.gz -C /var/tmp/repo .
+
+cp -rf /tmp/repo/* /repo/

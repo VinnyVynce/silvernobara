@@ -1,0 +1,19 @@
+version: '3'
+services:
+  silvernobara:
+    privileged: true
+    image: silvernobara:36
+    security_opt:
+      - label:disable
+    build:
+      dockerfile: Dockerfile
+      args:
+        REPO: /tmp/repo
+        CACHE: /tmp/cache
+    volumes:
+      - /mnt/user/appdata/letsencrypt/www/ostree:/repo
+    network_mode: "host"
+    environment:
+      - REPO=/tmp/repo
+      - CACHE=/tmp/cache
+
