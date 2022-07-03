@@ -7,10 +7,6 @@ services:
       - label:disable
     build:
       dockerfile: Dockerfile
-      args:
-        REPO: /repo
     volumes:
       - /mnt/user/appdata/letsencrypt/www/ostree:/repo
     network_mode: "host"
-    environment:
-      - REPO=/repo

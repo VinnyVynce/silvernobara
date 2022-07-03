@@ -10,4 +10,4 @@ fi
 /usr/bin/rpm-ostree compose tree --unified-core --cachedir=/tmp/cache --repo=/tmp/repo fedora-silvernobara.yaml
 /usr/bin/ostree summary --repo=/tmp/repo --update
 
-/bin/cp -rf /tmp/repo/* $REPO
+/bin/cp -rf /tmp/repo/* /repo
