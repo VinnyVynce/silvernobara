@@ -19,7 +19,7 @@ RUN git clone https://github.com/VinnyVynce/silvernobara . && mkdir -p /tmp/cach
 
 # Create crontab
 RUN touch /var/log/cron.log
-RUN echo "* */3 * * * root  /ostree/build.sh >> /var/log/cron.log 2>&1" >> /etc/crontab
+RUN echo "0 */3 * * * root  /ostree/build.sh >> /var/log/cron.log 2>&1" >> /etc/crontab
 
 # Run the command on container startup
 ENTRYPOINT ["/usr/sbin/crond", "-n"]
