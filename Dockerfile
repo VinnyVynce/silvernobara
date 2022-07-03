@@ -8,11 +8,6 @@ USER root
 # Updating container
 RUN dnf update -y && dnf install -y git cronie rpm-ostree selinux-policy selinux-policy-targeted policycoreutils
 
-# Setup cron for auto updating Fedora
-ADD crontab /etc/cron.d/updateRepo
-RUN chmod 0644 /etc/cron.d/updateRepo
-RUN touch /var/log/cron.log
-
 # Copy startup script
 COPY entry.sh /entry.sh
 
@@ -26,7 +21,8 @@ ARG repo=/repo
 RUN git clone https://github.com/VinnyVynce/silvernobara . && mkdir -p /tmp/cache /tmp/repo && chmod u+x build.sh /entry.sh
 
 # Create crontab
-RUN echo "*/5 * * * * root /ostree/build.sh >> /var/log/cron.log 2>&1" >> /etc/crontab
+RUN touch /var/log/cron.log
+RUN echo "* * * * * root  /ostree/build.sh >> /var/log/cron.log 2>&1" >> /etc/crontab
 
 # Run the command on container startup
 ENTRYPOINT ["/usr/sbin/crond", "-n"]
