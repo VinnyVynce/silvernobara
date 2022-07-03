@@ -1,0 +1,14 @@
+include: pantheon-desktop-pkgs.yaml
+ref: fedora/36/${basearch}/pantheon
+rojig:
+  name: fedora-pantheon
+  summary: "Fedora Pantheon base image"
+  license: MIT
+packages:
+  # Generic release package for desktop variants
+  - fedora-release
+  - fedora-release-ostree-desktop
+
+repos:
+  - fedora-36
+  - fedora-36-updates

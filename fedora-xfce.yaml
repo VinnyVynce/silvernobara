@@ -1,0 +1,15 @@
+include: xfce-desktop-pkgs.yaml
+ref: fedora/36/${basearch}/xfce
+rojig:
+  name: fedora-xfce
+  summary: "Fedora XFCE base image"
+  license: MIT
+packages:
+  - fedora-release-xfce
+  # Generic release sub package for desktop variants
+  - fedora-release-ostree-desktop
+  # Portals for Flatpak
+  - xdg-desktop-portal-gtk
+repos:
+  - fedora-36
+  - fedora-36-updates

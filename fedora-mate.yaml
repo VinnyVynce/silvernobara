@@ -1,0 +1,18 @@
+include: mate-desktop-pkgs.yaml
+ref: fedora/36/${basearch}/mate
+rojig:
+  name: fedora-mate
+  summary: "Fedora Mate base image"
+  license: MIT
+packages:
+  # Generic release sub package for desktop variants
+  - fedora-release-ostree-desktop
+  # Portals for Flatpak
+  - xdg-desktop-portal-gtk
+
+exclude-packages:
+  - python3-unbound
+
+repos:
+  - fedora-36
+  - fedora-36-updates

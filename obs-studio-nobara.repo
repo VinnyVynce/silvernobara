@@ -1,0 +1,9 @@
+[obs-studio-nobara]
+name=obs-studio-nobara
+baseurl=https://www.nobaraproject.org/repo/fedora/36/$basearch/obs-studio-nobara
+type=rpm-md
+skip_if_unavailable=True
+gpgcheck=0
+repo_gpgcheck=0
+enabled=1
+enabled_metadata=1
