@@ -15,7 +15,7 @@ WORKDIR /ostree
 ARG repo=/repo
 
 # Clone repository and change execution permissions for build.sh
-RUN git clone https://github.com/VinnyVynce/silvernobara . && mkdir -p /tmp/cache /tmp/repo && chmod u+x build.sh /entry.sh
+RUN git clone https://github.com/VinnyVynce/silvernobara . && mkdir -p /tmp/cache /tmp/repo && chmod u+x build.sh
 
 # Create crontab
 RUN touch /var/log/cron.log
