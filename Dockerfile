@@ -8,9 +8,6 @@ USER root
 # Updating container
 RUN dnf update -y && dnf install -y git cronie rpm-ostree selinux-policy selinux-policy-targeted policycoreutils
 
-# Copy startup script
-COPY entry.sh /entry.sh
-
 # Setting workdir
 WORKDIR /ostree
 
@@ -22,7 +19,7 @@ RUN git clone https://github.com/VinnyVynce/silvernobara . && mkdir -p /tmp/cach
 
 # Create crontab
 RUN touch /var/log/cron.log
-RUN echo "* * * * * root  /ostree/build.sh >> /var/log/cron.log 2>&1" >> /etc/crontab
+RUN echo "* */3 * * * root  /ostree/build.sh >> /var/log/cron.log 2>&1" >> /etc/crontab
 
 # Run the command on container startup
 ENTRYPOINT ["/usr/sbin/crond", "-n"]
