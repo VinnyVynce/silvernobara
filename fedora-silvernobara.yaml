@@ -13,7 +13,6 @@ repos:
   - copr:copr.fedorainfracloud.org:sentry:kernel-fsync
   - copr:copr.fedorainfracloud.org:gloriouseggroll:game-utils
   - copr:copr.fedorainfracloud.org:gloriouseggroll:openal-soft
-  - copr:copr.fedorainfracloud.org:gloriouseggroll:glibc
   - copr:copr.fedorainfracloud.org:gloriouseggroll:obs-studio-gamecapture
   - copr:copr.fedorainfracloud.org:kylegospo:gnome-vrr 
   - obs-studio-nobara
@@ -28,6 +27,9 @@ packages:
   - steam
   - obs-studio-gamecapture
   - obs-studio
+  - xpadneo
+  - xone
+  - lpf-xone-firmware
 # utilities
   - lm_sensors
   - corectrl
