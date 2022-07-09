@@ -4,5 +4,5 @@ mirrorlist=https://mirrors.fedoraproject.org/metalink?repo=fedora-36&arch=$basea
 enabled=1
 gpgcheck=1
 metadata_expire=1d
-exclude=kernel*,mutter,gnome-control-center
+exclude=kernel*,mesa*,mutter,gnome-control-center
 exclude_from_weak=gnome-tour
