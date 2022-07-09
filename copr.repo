@@ -58,18 +58,6 @@ enabled=1
 enabled_metadata=1
 module_hotfixes=1
 
-[copr:copr.fedorainfracloud.org:gloriouseggroll:glibc]
-name=Copr repo for glibc owned by gloriouseggroll
-baseurl=https://download.copr.fedorainfracloud.org/results/gloriouseggroll/glibc/fedora-36-$basearch/
-type=rpm-md
-skip_if_unavailable=True
-gpgcheck=1
-gpgkey=https://download.copr.fedorainfracloud.org/results/gloriouseggroll/glibc/pubkey.gpg
-repo_gpgcheck=0
-enabled=1
-enabled_metadata=1
-module_hotfixes=1
-
 [copr:copr.fedorainfracloud.org:gloriouseggroll:obs-studio-gamecapture]
 name=Copr repo for obs-studio-gamecapture owned by gloriouseggroll
 baseurl=https://download.copr.fedorainfracloud.org/results/gloriouseggroll/obs-studio-gamecapture/fedora-36-$basearch/
