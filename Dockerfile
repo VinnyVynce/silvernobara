@@ -14,13 +14,6 @@ WORKDIR /ostree
 # Arguments for rpm-ostree 
 ARG repo=/repo
 
-# Workaround for a bug with akmodsbuild. See: https://github.com/fedora-silverblue/issue-tracker/issues/286
-RUN mkdir -p /etc/systemd/system/rpm-ostreed.service/ && \
-    echo '[Service]' > /etc/systemd/system/rpm-ostreed.service/override.conf && \
-    echo 'LimitNOFILE=65535' >> /etc/systemd/system/rpm-ostreed.service/override.conf && \
-    sudo systemctl daemon-reload && \
-    systemctl restart rpm-ostreed.service
-
 # Create a startup script to keep the github repo in sync.
 RUN echo '#!/bin/bash' > /tmp/start.sh && \
     echo 'cd /ostree' >> /tmp/start.sh && \
