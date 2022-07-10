@@ -1,4 +1,5 @@
 # Fedora Silvernobara
+[![Docker Image CI](https://github.com/VinnyVynce/silvernobara/actions/workflows/docker-image.yml/badge.svg)](https://github.com/VinnyVynce/silvernobara/actions/workflows/docker-image.yml)  
 Fedora Silverblue with Project Nobara gaming enhancements.  
 I do not provide any ostree remote for this project or any support. Use at your own risks.  
 
