@@ -1,4 +1,4 @@
-FROM docker.io/fedora:37
+FROM docker.io/fedora:36
 
 MAINTAINER VinnyVynce (https://github.com/VinnyVynce)
 

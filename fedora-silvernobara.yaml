@@ -27,7 +27,6 @@ packages:
   - steam
   - obs-studio-gamecapture
   - obs-studio
-  - xpadneo
   - xone
   - lpf-xone-firmware
 # utilities
