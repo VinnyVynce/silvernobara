@@ -1,4 +1,22 @@
-# Manifests for rpm-ostree based Fedora variants
+# Fedora Silvernobara
+Fedora Silverblue with Project Nobara gaming enhancements.  
+I do not provide any ostree remote for this project or any support. Use at your own risks.  
+
+## How to use
+A github CI updates the [docker](https://hub.docker.com/r/vinnyvynce/fedora-silvernobara) once changes are made in the repository. The docker generate a fresh remote every 3 hours. Nginx or Apache are required to host the repository.  
+The docker only requires a volume on `/repo`.  
+Once your repo is self-hosted add it on Silverblue and rebase:  
+
+```
+sudo ostree remote add --no-gpg-verify remote-name https://your-domain.local/ostree
+sudo rpm-ostree rebase remote-name:fedora/36/x86_64/silvernobora
+```
+
+## Special thanks
+- [martinpitt on github for the inspiration](https://github.com/martinpitt/ostree-pitti-workstation)
+- [gloriouseggroll for all the time and effort that goes through Nobara and ProtonGE.](https://nobaraproject.org/)
+
+# [Original README.md on pagure](https://pagure.io/workstation-ostree-config): Manifests for rpm-ostree based Fedora variants
 
 This is the configuration needed to create
 [rpm-ostree](https://coreos.github.io/rpm-ostree/) based variants of Fedora.
