@@ -33,7 +33,6 @@ repo_gpgcheck=0
 enabled=1
 enabled_metadata=1
 module_hotfixes=1
-exclude=mangohud:i386
 
 [copr:copr.fedorainfracloud.org:gloriouseggroll:openal-soft]
 name=Copr repo for openal-soft owned by gloriouseggroll
