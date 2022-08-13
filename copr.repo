@@ -8,7 +8,18 @@ gpgkey=https://download.copr.fedorainfracloud.org/results/gloriouseggroll/mesa-a
 repo_gpgcheck=0
 enabled=1
 enabled_metadata=1
-module_hotfixes=1
+
+[copr:copr.fedorainfracloud.org:gloriouseggroll:mesa-aco:ml]
+name=Copr repo for mesa-aco owned by gloriouseggroll (i386)
+baseurl=https://download.copr.fedorainfracloud.org/results/gloriouseggroll/mesa-aco/fedora-36-i386/
+type=rpm-md
+skip_if_unavailable=True
+gpgcheck=1
+gpgkey=https://download.copr.fedorainfracloud.org/results/gloriouseggroll/mesa-aco/pubkey.gpg
+repo_gpgcheck=0
+cost=1100
+enabled=1
+enabled_metadata=1
 
 [copr:copr.fedorainfracloud.org:sentry:kernel-fsync]
 name=Copr repo for kernel-fsync owned by sentry

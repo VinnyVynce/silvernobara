@@ -9,6 +9,7 @@ repos:
   - rpmfusion-nonfree-updates
   - rpmfusion-free
   - rpmfusion-free-updates
+  - copr:copr.fedorainfracloud.org:gloriouseggroll:mesa-aco:ml
   - copr:copr.fedorainfracloud.org:gloriouseggroll:mesa-aco
   - copr:copr.fedorainfracloud.org:sentry:kernel-fsync
   - copr:copr.fedorainfracloud.org:gloriouseggroll:game-utils
@@ -27,7 +28,13 @@ packages:
   - steam
   - obs-studio-gamecapture
   - obs-studio
+  - vulkan-loader
+  - vulkan-headers
+  - mesa-libGLU
+  - libglvnd
+  - libdrm
 # utilities
   - lm_sensors
   - corectrl
   - ffmpeg
+  - python3-pip
