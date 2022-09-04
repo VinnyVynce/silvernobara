@@ -1,21 +1,21 @@
-[copr:copr.fedorainfracloud.org:gloriouseggroll:mesa-aco]
-name=Copr repo for mesa-aco owned by gloriouseggroll
-baseurl=https://download.copr.fedorainfracloud.org/results/gloriouseggroll/mesa-aco/fedora-36-$basearch/
+[copr:copr.fedorainfracloud.org:gloriouseggroll:nobara]
+name=Copr repo for nobara owned by gloriouseggroll
+baseurl=https://download.copr.fedorainfracloud.org/results/gloriouseggroll/nobara/fedora-36-$basearch/
 type=rpm-md
 skip_if_unavailable=True
 gpgcheck=1
-gpgkey=https://download.copr.fedorainfracloud.org/results/gloriouseggroll/mesa-aco/pubkey.gpg
+gpgkey=https://download.copr.fedorainfracloud.org/results/gloriouseggroll/nobara/pubkey.gpg
 repo_gpgcheck=0
 enabled=1
 enabled_metadata=1
 
-[copr:copr.fedorainfracloud.org:gloriouseggroll:mesa-aco:ml]
-name=Copr repo for mesa-aco owned by gloriouseggroll (i386)
-baseurl=https://download.copr.fedorainfracloud.org/results/gloriouseggroll/mesa-aco/fedora-36-i386/
+[copr:copr.fedorainfracloud.org:gloriouseggroll:nobara:ml]
+name=Copr repo for nobara owned by gloriouseggroll (i386)
+baseurl=https://download.copr.fedorainfracloud.org/results/gloriouseggroll/nobara/fedora-36-i386/
 type=rpm-md
 skip_if_unavailable=True
 gpgcheck=1
-gpgkey=https://download.copr.fedorainfracloud.org/results/gloriouseggroll/mesa-aco/pubkey.gpg
+gpgkey=https://download.copr.fedorainfracloud.org/results/gloriouseggroll/nobara/pubkey.gpg
 repo_gpgcheck=0
 cost=1100
 enabled=1
@@ -28,54 +28,6 @@ type=rpm-md
 skip_if_unavailable=True
 gpgcheck=1
 gpgkey=https://download.copr.fedorainfracloud.org/results/sentry/kernel-fsync/pubkey.gpg
-repo_gpgcheck=0
-enabled=1
-enabled_metadata=1
-module_hotfixes=1
-
-[copr:copr.fedorainfracloud.org:gloriouseggroll:game-utils]
-name=Copr repo for game-utils owned by gloriouseggroll
-baseurl=https://download.copr.fedorainfracloud.org/results/gloriouseggroll/game-utils/fedora-36-$basearch/
-type=rpm-md
-skip_if_unavailable=True
-gpgcheck=1
-gpgkey=https://download.copr.fedorainfracloud.org/results/gloriouseggroll/game-utils/pubkey.gpg
-repo_gpgcheck=0
-enabled=1
-enabled_metadata=1
-module_hotfixes=1
-
-[copr:copr.fedorainfracloud.org:gloriouseggroll:openal-soft]
-name=Copr repo for openal-soft owned by gloriouseggroll
-baseurl=https://download.copr.fedorainfracloud.org/results/gloriouseggroll/openal-soft/fedora-36-$basearch/
-type=rpm-md
-skip_if_unavailable=True
-gpgcheck=1
-gpgkey=https://download.copr.fedorainfracloud.org/results/gloriouseggroll/openal-soft/pubkey.gpg
-repo_gpgcheck=0
-enabled=1
-enabled_metadata=1
-module_hotfixes=1
-
-[copr:copr.fedorainfracloud.org:gloriouseggroll:openal-soft]
-name=Copr repo for openal-soft owned by gloriouseggroll
-baseurl=https://download.copr.fedorainfracloud.org/results/gloriouseggroll/openal-soft/fedora-36-$basearch/
-type=rpm-md
-skip_if_unavailable=True
-gpgcheck=1
-gpgkey=https://download.copr.fedorainfracloud.org/results/gloriouseggroll/openal-soft/pubkey.gpg
-repo_gpgcheck=0
-enabled=1
-enabled_metadata=1
-module_hotfixes=1
-
-[copr:copr.fedorainfracloud.org:gloriouseggroll:obs-studio-gamecapture]
-name=Copr repo for obs-studio-gamecapture owned by gloriouseggroll
-baseurl=https://download.copr.fedorainfracloud.org/results/gloriouseggroll/obs-studio-gamecapture/fedora-36-$basearch/
-type=rpm-md
-skip_if_unavailable=True
-gpgcheck=1
-gpgkey=https://download.copr.fedorainfracloud.org/results/gloriouseggroll/obs-studio-gamecapture/pubkey.gpg
 repo_gpgcheck=0
 enabled=1
 enabled_metadata=1
