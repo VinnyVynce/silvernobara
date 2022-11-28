@@ -51,6 +51,7 @@ packages:
   - plasma-vault
   - plasma-workspace
   - plasma-workspace-geolocation
+  - plasma-workspace-wallpapers
   - plasma-workspace-xorg
   - polkit-kde
   - qt-at-spi
@@ -60,5 +61,10 @@ packages:
   - sddm-breeze
   - sddm-kcm
   - spectacle
+  - systemd-oomd-defaults
   - xdg-desktop-portal-gnome
   - xorg-x11-drv-libinput
+packages-x86_64:
+  - kio-gdrive
+packages-aarch64:
+  - kio-gdrive

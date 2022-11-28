@@ -1,5 +1,5 @@
 include: fedora-silverblue.yaml
-ref: fedora/36/${basearch}/silvernobora
+ref: fedora/37/${basearch}/silvernobora
 rojig:
   name: fedora-silvernobora
   summary: "Fedora Silverblue with Project Nobora enhancements"
@@ -12,7 +12,6 @@ repos:
   - copr:copr.fedorainfracloud.org:gloriouseggroll:nobara:ml
   - copr:copr.fedorainfracloud.org:gloriouseggroll:nobara
   - copr:copr.fedorainfracloud.org:kylegospo:gnome-vrr
-  - obs-studio-nobara
 packages:
 # Gaming related
   - gamescope

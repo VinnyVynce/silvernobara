@@ -8,9 +8,9 @@ packages:
   - abattis-cantarell-vf-fonts
   - acl
   - adwaita-qt5
-  - alsa-sof-firmware
   - alsa-ucm
   - alsa-utils
+  - amd-gpu-firmware
   - atmel-firmware
   - attr
   - audit
@@ -59,6 +59,7 @@ packages:
   - gnupg2
   - google-noto-emoji-color-fonts
   - google-noto-naskh-arabic-vf-fonts
+  - google-noto-sans-arabic-vf-fonts
   - google-noto-sans-armenian-vf-fonts
   - google-noto-sans-canadian-aboriginal-vf-fonts
   - google-noto-sans-cherokee-vf-fonts
@@ -68,7 +69,7 @@ packages:
   - google-noto-sans-gurmukhi-vf-fonts
   - google-noto-sans-hebrew-vf-fonts
   - google-noto-sans-lao-vf-fonts
-  - google-noto-sans-math-vf-fonts
+  - google-noto-sans-math-fonts
   - google-noto-sans-mono-vf-fonts
   - google-noto-sans-sinhala-vf-fonts
   - google-noto-sans-thaana-vf-fonts
@@ -84,11 +85,13 @@ packages:
   - hunspell
   - ibus-anthy
   - ibus-gtk3
+  - ibus-gtk4
   - ibus-hangul
   - ibus-libpinyin
   - ibus-libzhuyin
   - ibus-m17n
   - ibus-typing-booster
+  - intel-gpu-firmware
   - iproute
   - iptables-nft
   - iptstate
@@ -119,8 +122,6 @@ packages:
   - liberation-mono-fonts
   - liberation-sans-fonts
   - liberation-serif-fonts
-  - libertas-sd8686-firmware
-  - libertas-sd8787-firmware
   - libertas-usb8388-firmware
   - libglvnd-gles
   - linux-firmware
@@ -148,6 +149,7 @@ packages:
   - nss-mdns
   - ntfs-3g
   - ntfsprogs
+  - nvidia-gpu-firmware
   - opensc
   - openssh-clients
   - openssh-server
@@ -170,6 +172,7 @@ packages:
   - procps-ng
   - psmisc
   - qemu-guest-agent
+  - qgnomeplatform-qt5
   - qt5-qtbase
   - qt5-qtbase-gui
   - qt5-qtdeclarative
@@ -189,6 +192,7 @@ packages:
   - sil-padauk-fonts
   - sos
   - spice-vdagent
+  - spice-webdavd
   - sssd
   - sssd-common
   - sssd-kcm
@@ -202,15 +206,18 @@ packages:
   - tar
   - thai-scalable-waree-fonts
   - time
+  - toolbox
   - tree
   - unzip
   - uresourced
   - usb_modeswitch
   - usbutils
   - util-linux
+  - vazirmatn-vf-fonts
   - vim-minimal
   - wget
   - which
+  - whois
   - wireplumber
   - words
   - wpa_supplicant
@@ -228,3 +235,5 @@ packages:
   - zd1211-firmware
   - zip
   - zram-generator-defaults
+packages-x86_64:
+  - alsa-sof-firmware

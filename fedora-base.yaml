@@ -1,5 +1,5 @@
 include: fedora-common-ostree.yaml
-ref: fedora/36/${basearch}/base
+ref: fedora/37/${basearch}/base
 rojig:
   name: fedora-base
   summary: "Fedora base image for alternative DE"
@@ -15,5 +15,5 @@ packages:
   - xdg-desktop-portal-gtk
 
 repos:
-  - fedora-36
-  - fedora-36-updates
+  - fedora-37
+  - fedora-37-updates
