@@ -1,6 +1,6 @@
 [copr:copr.fedorainfracloud.org:gloriouseggroll:nobara]
 name=Copr repo for nobara owned by gloriouseggroll
-baseurl=https://download.copr.fedorainfracloud.org/results/gloriouseggroll/nobara/fedora-36-$basearch/
+baseurl=https://download.copr.fedorainfracloud.org/results/gloriouseggroll/nobara/fedora-37-$basearch/
 type=rpm-md
 skip_if_unavailable=True
 gpgcheck=1
@@ -12,7 +12,7 @@ exclude=nobara-logos*,nautilus,gsettings-desktop-schemas,gdm
 
 [copr:copr.fedorainfracloud.org:gloriouseggroll:nobara:ml]
 name=Copr repo for nobara owned by gloriouseggroll (i386)
-baseurl=https://download.copr.fedorainfracloud.org/results/gloriouseggroll/nobara/fedora-36-i386/
+baseurl=https://download.copr.fedorainfracloud.org/results/gloriouseggroll/nobara/fedora-37-i386/
 type=rpm-md
 skip_if_unavailable=True
 gpgcheck=1
@@ -25,7 +25,7 @@ exclude=nobara-logos*,nautilus,gsettings-desktop-schemas,gdm
 
 [copr:copr.fedorainfracloud.org:kylegospo:gnome-vrr]
 name=Copr repo for gnome-vrr owned by kylegospo
-baseurl=https://download.copr.fedorainfracloud.org/results/kylegospo/gnome-vrr/fedora-36-$basearch/
+baseurl=https://download.copr.fedorainfracloud.org/results/kylegospo/gnome-vrr/fedora-37-$basearch/
 type=rpm-md
 skip_if_unavailable=True
 gpgcheck=1

@@ -1,12 +1,15 @@
-ref: fedora/36/${basearch}/ostree-base
+ref: fedora/37/${basearch}/ostree-base
 
-automatic_version_prefix: "36"
-mutate-os-release: "36"
+automatic_version_prefix: "37"
+mutate-os-release: "37"
 
 include: fedora-common-ostree-pkgs.yaml
 
 packages:
+  # Do not include "full" Git as it brings in Perl
   - git-core
+  # Explicitely add Git docs
+  - git-core-doc
   - lvm2
   - rpm-ostree
   # Container management
@@ -49,8 +52,8 @@ check-groups:
 
 default_target: graphical.target
 
-# Keep this in sync with fedora-atomic-host.json from fedora-atomic
 packages-aarch64:
+  - bootupd
   - grub2-efi
   - ostree-grub2
   - efibootmgr
@@ -65,6 +68,7 @@ packages-ppc64le:
   - grub2
   - ostree-grub2
 packages-x86_64:
+  - bootupd
   - grub2-efi-ia32
   - grub2-efi-x64
   - grub2-pc
@@ -110,3 +114,4 @@ postprocess:
             ln -srf /usr/bin/true ${x}
         fi
     done
+postprocess-script: "postprocess.sh"

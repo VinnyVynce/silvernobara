@@ -1,0 +1,22 @@
+include: xfce-desktop-pkgs.yaml
+ref: fedora/37/${basearch}/vauxite
+rojig:
+  name: fedora-vauxite
+  summary: "Fedora Vauxite (XFCE) base image"
+  license: MIT
+packages:
+  - fedora-release-xfce
+  # Generic release sub package for desktop variants
+  - fedora-release-ostree-desktop
+  # Portals for Flatpak
+  - xdg-desktop-portal-gtk
+  # Essential packages from @xfce-apps
+  - atril
+  - firefox
+  - galculator
+  - mousepad
+  - ristretto
+  - xarchiver
+repos:
+  - fedora-37
+  - fedora-37-updates

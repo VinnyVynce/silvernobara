@@ -1,5 +1,5 @@
 include: gnome-desktop-pkgs.yaml
-ref: fedora/36/${basearch}/silverblue
+ref: fedora/37/${basearch}/silverblue
 rojig:
   name: fedora-silverblue
   summary: "Fedora Silverblue base image"
@@ -23,5 +23,5 @@ packages:
   - totem-video-thumbnailer
 
 repos:
-  - fedora-36
-  - fedora-36-updates
+  - fedora-37
+  - fedora-37-updates

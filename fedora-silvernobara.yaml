@@ -1,5 +1,5 @@
 include: fedora-silverblue.yaml
-ref: fedora/36/${basearch}/silvernobora
+ref: fedora/37/${basearch}/silvernobora
 rojig:
   name: fedora-silvernobora
   summary: "Fedora Silverblue with Project Nobora enhancements"
