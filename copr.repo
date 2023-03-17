@@ -8,7 +8,7 @@ gpgkey=https://download.copr.fedorainfracloud.org/results/gloriouseggroll/nobara
 repo_gpgcheck=0
 enabled=1
 enabled_metadata=1
-exclude=nobara-logos*,nautilus,gsettings-desktop-schemas,gdm
+exclude=kernel,nobara-logos*,nautilus,gsettings-desktop-schemas,gdm
 
 [copr:copr.fedorainfracloud.org:gloriouseggroll:nobara:ml]
 name=Copr repo for nobara owned by gloriouseggroll (i386)
@@ -21,7 +21,7 @@ repo_gpgcheck=0
 cost=1100
 enabled=1
 enabled_metadata=1
-exclude=nobara-logos*,nautilus,gsettings-desktop-schemas,gdm
+exclude=kernel,nobara-logos*,nautilus,gsettings-desktop-schemas,gdm
 
 [copr:copr.fedorainfracloud.org:kylegospo:gnome-vrr]
 name=Copr repo for gnome-vrr owned by kylegospo
@@ -34,4 +34,15 @@ repo_gpgcheck=0
 enabled=1
 enabled_metadata=1
 module_hotfixes=1
+
+[copr:copr.fedorainfracloud.org:sentry:kernel-fsync]
+name=Copr repo for kernel-fsync owned by sentry
+baseurl=https://download.copr.fedorainfracloud.org/results/sentry/kernel-fsync/fedora-37-$basearch/
+type=rpm-md
+skip_if_unavailable=True
+gpgcheck=1
+gpgkey=https://download.copr.fedorainfracloud.org/results/sentry/kernel-fsync/pubkey.gpg
+repo_gpgcheck=0
+enabled=1
+enabled_metadata=1
 

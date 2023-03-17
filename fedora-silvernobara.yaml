@@ -12,6 +12,7 @@ repos:
   - copr:copr.fedorainfracloud.org:gloriouseggroll:nobara:ml
   - copr:copr.fedorainfracloud.org:gloriouseggroll:nobara
   - copr:copr.fedorainfracloud.org:kylegospo:gnome-vrr
+  - copr:copr.fedorainfracloud.org:sentry:kernel-fsync
   - obs-studio-nobara
 packages:
 # Gaming related
