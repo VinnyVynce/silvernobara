@@ -27,6 +27,8 @@ packages:
   - vulkan-loader
   - vulkan-headers
   - mesa-libGLU
+  - mesa-va-drivers-freeworld
+  - mesa-vdpau-drivers-freeworld
   - libglvnd
   - libdrm
 # utilities

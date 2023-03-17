@@ -2,7 +2,7 @@ version: '3'
 services:
   silvernobara:
     privileged: true
-    image: silvernobara:36
+    image: silvernobara:37
     security_opt:
       - label:disable
     build:
